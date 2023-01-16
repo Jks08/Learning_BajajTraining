@@ -12,3 +12,9 @@
 -- select * from teachers where lname in ('sriv','bhatta','singh','yada') and salary>70000;
 -- select * from teachers where school<>'SRM' and (salary<35000 or salary>50000);
 -- select * from teachers where lname like 's%' or lname like 'b%';
+
+-- select fname,lname,school from teachers order by school asc,lname asc;
+
+-- select * from teachers where fname like 's%' and salary>40000
+
+-- select * from teachers where hire_date>'2001-01-01' order by salary desc;
