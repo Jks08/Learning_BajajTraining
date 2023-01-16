@@ -1,0 +1,3 @@
+-- Create table emp_data(name varchar(30), address text);
+-- insert into emp_data values ('Rahul','Pune'), ('Ram','Mumbai');
+-- copy emp_data to '/Users/jishnusrivastava/Documents/PostgresqlLearnings/emp.txt' with (format csv,header,delimiter '|');

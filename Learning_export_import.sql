@@ -1,0 +1,6 @@
+-- Create table emp_data(name varchar(30), address text);
+-- insert into emp_data values ('Rahul','Pune'), ('Ram','Mumbai');
+-- copy emp_data to '/tmp/emp.txt' with (format csv,header,delimiter '|');
+-- copy emp_data from '/tmp/emp.txt' with (format csv,header,delimiter '|');
+-- select fname from teachers where salary = (select max(salary) from teachers);
+-- select * from teachers;

@@ -18,3 +18,5 @@
 -- select * from teachers where fname like 's%' and salary>40000
 
 -- select * from teachers where hire_date>'2001-01-01' order by salary desc;
+
+select * from teachers inner join 
