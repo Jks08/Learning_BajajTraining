@@ -1,12 +1,23 @@
 #table1{
     background-color: antiquewhite;
-    border: 5cm;
     height: 10cm;
-    width: 10cm;
+    width: 15cm;
     text-align: center;
+    border-color: black;
+    
 }
 
 .table2{
     color: lightcoral;
     font-size: larger;
+}
+
+.table3{
+    color: orange;
+    font-size: medium;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
 }
