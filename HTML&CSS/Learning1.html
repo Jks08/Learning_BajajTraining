@@ -8,9 +8,25 @@
     <link rel="stylesheet" href="rainbow.css">
     <title>LearningHTML</title>
     
+    <script type="text/javascript">
+        function myFun(){
+            var randCol="";
+            var alChar="0123456789ABCDEF";
+            for(var i=0; i<6; i++){
+                randCol += alChar[Math.floor(Math.random()*16)];
+            }
+            // console.log(randCol);
+
+            document.body.style.backgroundColor= "#"+randCol;
+        }
+    </script> 
+    
 </head>
-<body style="background-color: teal;">
-    <h1>  Examples displayed. </h1>
+<body bgcolor="teal">
+    <h3 style="text-align: center;">  Examples displayed. </h3>
+    <button onclick="javascript:myFun()">Change color</button>
+    <h4 id="bhak"> </h4>
+
     <!-- <h2> nice </h2> 
     <p> I am a <sub> machine </sub>. a macintosh to be spec<sup> ific</sup>.</p> -->
     <!-- On mac: comment shortcut is command key + / -->
@@ -173,9 +189,20 @@
     <input type="url">
     <p> </p>
     <br>
+    <hr>
 
     <!-- <i class="fas fa-search fa-rotate-90"></i> -->
+    <!-- video insert into website -->
+    <h3> This is a video example:</h3>
     <video width="500" controls autoplay> <source src="testVideo.mp4" type="video/mp4"> </video>
+    <hr>
+    <!-- insert audio -->
+    <p> This is an audio sample </p>
+    <audio src="SampleAudio_0.4mb.mp3" controls autoplay> </audio>
+    <hr>
+
+
+
 
 </body>
 </html>

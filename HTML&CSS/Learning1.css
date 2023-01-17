@@ -22,3 +22,19 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+p{
+    color: orange;
+    font-size: x-large;
+}
+
+h3{
+    color: coral;
+    border: white 10px solid;
+    font-size: xx-large;
+}
+
+/* body{ */
+    /* background-color:teal; */
+    /* background: url('jksStand.jpg'); */
+/* } */
