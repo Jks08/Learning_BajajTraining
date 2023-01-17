@@ -1,0 +1,12 @@
+#table1{
+    background-color: antiquewhite;
+    border: 5cm;
+    height: 10cm;
+    width: 10cm;
+    text-align: center;
+}
+
+.table2{
+    color: lightcoral;
+    font-size: larger;
+}
