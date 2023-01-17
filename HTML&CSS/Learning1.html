@@ -6,26 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Learning1.css">
     <link rel="stylesheet" href="rainbow.css">
-    <title>LearningHTML</title>
-    
-    <script type="text/javascript">
-        function myFun(){
-            var randCol="";
-            var alChar="0123456789ABCDEF";
-            for(var i=0; i<6; i++){
-                randCol += alChar[Math.floor(Math.random()*16)];
-            }
-            // console.log(randCol);
-
-            document.body.style.backgroundColor= "#"+randCol;
-        }
-    </script> 
-    
+    <title>LearningHTML</title>    
 </head>
 <body bgcolor="teal">
     <h3 style="text-align: center;">  Examples displayed. </h3>
-    <button onclick="javascript:myFun()">Change color</button>
-    <h4 id="bhak"> </h4>
+    <button id ="changeColor">Click to Change Color<script src="Learning1.js"> </script></button> 
+
 
     <!-- <h2> nice </h2> 
     <p> I am a <sub> machine </sub>. a macintosh to be spec<sup> ific</sup>.</p> -->
