@@ -3,7 +3,8 @@
     height: 10cm;
     width: 15cm;
     text-align: center;
-    border-color: black;
+    border: 25px solid black;
+    border-style: dotted;
     
 }
 

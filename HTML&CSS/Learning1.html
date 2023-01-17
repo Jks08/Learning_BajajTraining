@@ -9,14 +9,16 @@
     <title>LearningHTML</title>
     
 </head>
-<body bgcolor="teal">
+<body style="background-color: teal;">
     <h1>  Examples displayed. </h1>
     <!-- <h2> nice </h2> 
     <p> I am a <sub> machine </sub>. a macintosh to be spec<sup> ific</sup>.</p> -->
+    <!-- On mac: comment shortcut is command key + / -->
     <p> <h1 style="color: white;"> x<sup>2</sup> + 2y = 23 + x </h1> </p>
     <p> <h1 style="color: whitesmoke;"> H<sub>2</sub> + O = H<sub>2</sub>O </h1> </p>
-    <p id="demo" style="color: azure; font-size: larger;"><script src='Learning1.js'></script></p>
+    <p id="demo" style="color: azure; font-size: larger;"> Click  me<script src='Learning1.js'> </script></p>
     <hr>
+
 
     <ol style="color: orange;">
         <li> <b> JKS </li>
@@ -33,7 +35,7 @@
     </ul>
     <hr size="10" noshade>
 
-    <table id="table1" border="5">
+    <table id="table1" border="5" >
         <tr style="color: black; font-size: larger; font-family: Impact;"> <!-- table row (tr) -->
           <b>   <th> Name </th> <!-- table heading (th) -->
             <th> Job </th>
@@ -111,8 +113,69 @@
 
     <h1><a style="color: aliceblue; font-size: larger;" href="https://www.color-hex.com" target="_blank" title="Awesome play of colors"> Color Hex</a></h1>
 
-    <iframe src="https://www.w3schools.com" title="Google"></iframe>
+    <iframe src="https://www.w3schools.com" title="w3schools"></iframe>
 
+    <br>
+
+    <img src="jksStand.jpg" alt="jks_on_a_stand" style="height: 10cm; width: 6cm;">
+    <br>
+   
+    <!-- Entities and Symbols -->
+    <p class="wrapper"> 2 &gt; 1</p> <!-- greater than : &gt -->
+    <p class="wrapper"> 5 &lt; 10 </p> <!-- less than : &lt -->
+    <p class="wrapper"> &copy;</p> <!-- copywright -->
+    <p class="wrapper"> &reg; </p> <!-- registered -->
+    <p class="wrapper"> &cent; </p> <!-- cent -->
+    <p class="wrapper"> &spades; </p> <!-- spades of cards -->
+    <p class="wrapper"> &clubs; </p> <!-- clubs/clove of cards -->
+    <p class="wrapper"> &diam; </p> <!-- diamond of cards -->
+    <p class="wrapper"> &hearts; </p> <!-- hearts of cards -->
+
+    <!-- HTML forms -->
+    <form style="font-size: larger;"> 
+        <input type="text" placeholder="First Name" style="font-size:x-large">
+        <br>
+        <input type="text" placeholder="Last Name" style="font-size: x-large;">
+        <br>
+        <input name="gender" type="radio" value="male" style="font-size: larger;">
+        <label for="gender" style="font-size: larger;">male </label>
+        <br>
+        <input name="gender" type="radio" value="female">
+        <label for="gender" style="font-size:larger ;">female</label>
+    </form>
+
+
+    <select name="movies">
+        <option value="movies">Movies</option>
+        <option value="Dragon Ball">Dragon Ball</option>
+    </select>
+
+    <!-- Data List -->
+    <input list="movies">
+    <datalist id="movies">
+        <option value="movies"></option>
+        <option value="Dragon Ball"></option>
+    </datalist>
+    
+    <!-- Button and Input types -->
+    <button onclick="alert('hehehehehe')"> Submit </button>
+    <button type="button"> Click moi monsieur</button>
+    <input type="submit" value="moshi mosh aanate" onclick="alert('Moshi Moshi')">
+
+    <input type="number" placeholder="Enter Phone number">
+    <input type="email" placeholder="Enter your mail">
+    <input type="password" value = 'password'>
+    <input type ="reset">
+    <input type="color">
+    <input type="file">
+    <input type="search" placeholder="search_items";>
+    <input type="checkbox">
+    <input type="url">
+    <p> </p>
+    <br>
+
+    <!-- <i class="fas fa-search fa-rotate-90"></i> -->
+    <video width="500" controls autoplay> <source src="testVideo.mp4" type="video/mp4"> </video>
 
 </body>
 </html>
