@@ -164,6 +164,22 @@ def rev_str_recur(st):
     else:
         return rev_str_recur(st[1:])+st[0]
 
+def file_handling():
+    with open('randomTXTFile.txt','r') as f:
+        linesRead = f.readlines()
+
+    # print(linesRead[2])
+    # print(linesRead[3])
+
+    linesRead[2] = 'HueHueHueHueHue\n'
+    linesRead[3] = 'Ehe te nandayo\n'
+    with open('randomTXTFile.txt','w') as f:
+        f.writelines(linesRead)
+    
+    # import os
+    # os.rename('randomTXTFile(1).txt','randomTXTFile.txt')
+    # os.remove('randomTXTFile.txt')
+
 
 # hello_message()
 # star_triangle()
@@ -175,7 +191,7 @@ def rev_str_recur(st):
 # list_ops1()
 # dict_ops1()
 # set_ops1()
-
+file_handling()
 '''
 l = [1,2,3]
 print(func_ops1(l))
@@ -202,3 +218,4 @@ lis1.reverse()
 L = reduce(lambda x,y:x**y,lis1)
 print(L)
 '''
+
