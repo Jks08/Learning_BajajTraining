@@ -24,24 +24,39 @@ class Emp:
         Emp.org=n
 
 if __name__=='__main__':
+
     print()
     obj1 = Emp()  
     print()
+    
     print(obj1.org)
     print()
     #obj is a pointer to the actual object, which is Emp(..). 
     # First, allocation of memory happens, then init function is called. init stand for initialize
+    
     obj1.display()                
     print()                
+    
     obj1.disp2()                  
     print()
+    
     obj1.modify('BWAHAHAAHAH')
     print(obj1.org)
     print()
+    
     obj1.static_modify('HEhe I want CAKE')
     print(obj1.org)
     print()
+    
     dept = tif.dept().display()
+
+    obj1.org = "Parkar"
+    print(obj1.org)
+    print()
+
+    obj1.static_modify('Naha')
+    print(obj1.org)
+    print()
 
 
 # class trialOfRenaming_self_Ininit:
