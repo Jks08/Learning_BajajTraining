@@ -99,7 +99,16 @@ class Person:
     def giveRaise(self,percent):
         self.pay = int(self.pay + (self.pay*percent/100))
 
+    def __repr__(self):
+        return "[Person: %s %s]"
+
 bobo = Person('Bobo Smtith')
 sues = Person('Sues me','Developer',100000)
 sues.giveRaise(20)
 print(sues.lastName(), sues.pay)
+print(sues.__repr__())
+
+import datetime
+now = datetime.datetime.now()
+print(now.__str__())
+print(now.__repr__())
