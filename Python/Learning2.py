@@ -1,8 +1,11 @@
 # from Learning1 import *
 import testImportFile as tif
 class Emp:
-    def __init__(self,eid='xxxxx',ename='Jon Doe',esal=29000):    #self refers to current object. A name other than self can be given, 
-        self.__eid = eid                          # but the same must be referred throughout.
+    org='Some Name'
+
+    def __init__(self,eid='xxxxx',ename='Jon Doe',esal=29000):    
+        #self refers to current object. A name other than self can be given, but the same must be referred throughout.
+        self.__eid = eid                          
         self.__ename=ename
         self.__esal=esal
     
@@ -13,12 +16,19 @@ class Emp:
         print(f"Employee name is {self.__ename} bearing ID {self.__eid} and earning {self.__esal} Rs monthly.")
 
 if __name__=='__main__':
-    obj1 = Emp()  #obj is a pointer to the actual object, which is Emp(..). First, allocation of memory happens, 
-    obj1.display()                # then init function is called. init stand for initialize
+    print()
+    obj1 = Emp()  
+    print()
+    print(obj1.org)
+    print()
+    #obj is a pointer to the actual object, which is Emp(..). 
+    # First, allocation of memory happens, then init function is called. init stand for initialize
+    obj1.display()                
     print()                
     obj1.disp2()                  
     print()
     dept = tif.dept().display()
+
 
 # class trialOfRenaming_self_Ininit:
 #     def __init__(archisman,name):
