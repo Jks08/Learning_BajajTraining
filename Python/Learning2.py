@@ -15,6 +15,14 @@ class Emp:
     def disp2(self):
         print(f"Employee name is {self.__ename} bearing ID {self.__eid} and earning {self.__esal} Rs monthly.")
 
+    @classmethod
+    def modify(self,n):
+        self.org=n
+
+    @staticmethod
+    def static_modify(n):
+        Emp.org=n
+
 if __name__=='__main__':
     print()
     obj1 = Emp()  
@@ -26,6 +34,12 @@ if __name__=='__main__':
     obj1.display()                
     print()                
     obj1.disp2()                  
+    print()
+    obj1.modify('BWAHAHAAHAH')
+    print(obj1.org)
+    print()
+    obj1.static_modify('HEhe I want CAKE')
+    print(obj1.org)
     print()
     dept = tif.dept().display()
 
