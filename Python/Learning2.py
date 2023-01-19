@@ -74,6 +74,7 @@ if __name__=='__main__':
     print()
 
     obj1.my_func(1,2,3,4,5,6,x=4,y=6,z=11)
+    print('\n')
 
 
 # class trialOfRenaming_self_Ininit:
@@ -85,3 +86,20 @@ if __name__=='__main__':
 
 # obj2 = trialOfRenaming_self_Ininit('Bhattacharya')
 # obj2.display()
+
+class Person:
+    def __init__(self,name,Job=None,pay=0):
+        self.name=name
+        self.Job=Job
+        self.pay=pay
+
+    def lastName(self):
+        return self.name.split()[-1]
+
+    def giveRaise(self,percent):
+        self.pay = int(self.pay + (self.pay*percent/100))
+
+bobo = Person('Bobo Smtith')
+sues = Person('Sues me','Developer',100000)
+sues.giveRaise(20)
+print(sues.lastName(), sues.pay)
