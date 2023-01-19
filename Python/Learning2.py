@@ -58,6 +58,10 @@ if __name__=='__main__':
     print(obj1.org)
     print()
 
+    obj1.modify('Dana')
+    print(obj1.org)
+    print()
+
 
 # class trialOfRenaming_self_Ininit:
 #     def __init__(archisman,name):
