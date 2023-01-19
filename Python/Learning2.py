@@ -196,25 +196,25 @@ print(r7)
 print('\n')
 
 
-from urllib.request import urlopen
-urlToRead = "https://raw.githubusercontent.com/Jks08/Exploratory-Data-Analysis/main/IBM_HR.csv"
-import pandas as pd
-def read_data(url):
-    if url.startswith(('http:','https:','ftp:')):
-        # return urlopen(url).read()
-        return pd.read_csv(url)
+# from urllib.request import urlopen
+# urlToRead = "https://raw.githubusercontent.com/Jks08/Exploratory-Data-Analysis/main/IBM_HR.csv"
+# import pandas as pd
+# def read_data(url):
+#     if url.startswith(('http:','https:','ftp:')):
+#         # return urlopen(url).read()
+#         return pd.read_csv(url)
 
-    else:
-        print('Not valid URL')
+#     else:
+#         print('Not valid URL')
 
-# s = read_data(urlToRead).decode('utf-8')
-s = pd.DataFrame(pd.read_csv(urlToRead))
-dic = {}
-for i in s.columns:
-    if i in ['Age','Attrition','Department','JobLevel','Gender']:
-        print(f"Header: {i} | Value:{s[i][0]}")
-        dic[i] = s[i][0]
+# # s = read_data(urlToRead).decode('utf-8')
+# s = pd.DataFrame(pd.read_csv(urlToRead))
+# dic = {}
+# for i in s.columns:
+#     if i in ['Age','Attrition','Department','JobLevel','Gender']:
+#         print(f"Header: {i} | Value:{s[i][0]}")
+#         dic[i] = s[i][0]
 
-print(dic)
-newSheet = pd.DataFrame(dic,index=[0])
-newSheet.to_excel('newSheet.xlsx')
+# print(dic)
+# newSheet = pd.DataFrame(dic,index=[0])
+# newSheet.to_excel('newSheet.xlsx')
