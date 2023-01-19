@@ -191,7 +191,7 @@ def file_handling():
 # list_ops1()
 # dict_ops1()
 # set_ops1()
-file_handling()
+# file_handling()
 '''
 l = [1,2,3]
 print(func_ops1(l))
