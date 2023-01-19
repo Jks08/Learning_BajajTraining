@@ -1,5 +1,7 @@
 # from Learning1 import *
 import testImportFile as tif
+import pdb
+
 class Emp:
     org='Some Name'
 
@@ -23,8 +25,17 @@ class Emp:
     def static_modify(n):
         Emp.org=n
 
-if __name__=='__main__':
+    def my_func(*args,**kwargs):
+        print(f"args are of type: {type(args)}; kwargs are of type: {type(kwargs)}")
+        print()
+        for i in args:
+            print(f"{i}",end=" ")
+        print()
+        # pdb.set_trace()
+        for j,k in kwargs.items():
+            print(f"{j}:{k}",end=" ")
 
+if __name__=='__main__':
     print()
     obj1 = Emp()  
     print()
@@ -61,6 +72,8 @@ if __name__=='__main__':
     obj1.modify('Dana')
     print(obj1.org)
     print()
+
+    obj1.my_func(1,2,3,4,5,6,x=4,y=6,z=11)
 
 
 # class trialOfRenaming_self_Ininit:
