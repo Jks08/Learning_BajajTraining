@@ -112,3 +112,109 @@ import datetime
 now = datetime.datetime.now()
 print(now.__str__())
 print(now.__repr__())
+print('\n')
+
+
+#Operator Overloading
+class Book1:
+    def __init__(self,pages):
+        self.pages = pages
+
+    def __add__(self,other_ob):
+        return self.pages+other_ob.pages
+
+    def __gt__(self,other_ob):
+        if self.pages>other_ob.pages: 
+            return "b1 has more than pages" 
+        else: 
+            "b1 has less pages"
+
+class Book2:
+    def __init__(self,pages):
+        self.pages=pages
+
+b1 = Book1(100)
+b2 = Book2(200)
+print(b1+b2)
+print('\n')
+
+#Regular Expressions
+import re
+p = re.compile(r'm\w\w')
+s = "cat rat mat sat men watt"
+r = p.search(s)
+print(r.group())
+
+p1 = re.search(r'w\w\w',s)
+print(p1.group())
+print()
+
+st = 'This; is the: "Core" Python\'s book'
+r1 = re.split(r'\W',st)
+print(r1)
+print()
+
+st1 = "This is beautiful"
+r2 = re.sub(r'beautiful',r'not so beautiful',st1)
+print(r2)
+print()
+
+st2 = "An apple a day keeps the doctor awaya"
+r3 = re.findall(r'[b-z,B-Z]+[\w]*',st2)
+for w in r3:
+    print(w)
+
+print()
+
+st3 = "one two three four five six seven 8 9 10"
+r4 = re.findall(r'\b\w{3,5}\b',st3)
+print(r4)
+print()
+r5 = re.findall(r'\b\d\b',st3)
+print(r5)
+print()
+st4 = "one two three onw two three"
+r6 = re.findall(r't[\w]*',st4)
+print(r6)
+print()
+
+print("ASSIGNMENT OF MAIL OID REGEX *******************************")
+print()
+
+f = open('mailIDs.txt','r')
+for i in f:
+    i = i.strip()
+    # emails = re.findall("[0-9a-zA-z]+@[0-9a-zA-z]+\.[0-9a-zA-z]+[.]*\w*", i)
+    emails = re.findall(r"\S+@\S+",i)
+    if(len(emails)>0):
+        print(emails)
+print()
+
+st5 = "Today is 19/01/2023. Next class will be from 06/10/2023"
+r7 = re.findall(r'\d+/\d+/\d+',st5)
+print(r7)
+print('\n')
+
+
+from urllib.request import urlopen
+urlToRead = "https://raw.githubusercontent.com/Jks08/Exploratory-Data-Analysis/main/IBM_HR.csv"
+import pandas as pd
+def read_data(url):
+    if url.startswith(('http:','https:','ftp:')):
+        # return urlopen(url).read()
+        return pd.read_csv(url)
+
+    else:
+        print('Not valid URL')
+
+# s = read_data(urlToRead).decode('utf-8')
+s = pd.DataFrame(pd.read_csv(urlToRead))
+dic = {}
+for i in s.columns:
+    if i in ['Age','Attrition','Department','JobLevel','Gender']:
+        print(f"Header: {i} | Value:{s[i][0]}")
+        dic[i] = s[i][0]
+
+print(dic)
+newSheet = pd.DataFrame(dic,index=[0])
+newSheet.to_excel('newSheet.xlsx')
