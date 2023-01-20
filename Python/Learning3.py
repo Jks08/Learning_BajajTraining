@@ -254,5 +254,32 @@ print()
 #-------------------------------------------------------------------------------------------
 
 #Decorators
-#Decorators are used to modify the functionality of a function without changing the function itself. They are implemented using @ symbol. Decorators can be used to implement logging, authentication, etc. 
+#Decorators are used to modify the functionality of a function without changing the function itself. They are implemented using @ symbol. Decorators can be used to implement logging, authentication, etc. Decorators are created using closures (functions returning functions).
 
+def my_decorator(func):
+    def wrapper(n1,n2):
+        n=10
+        f = func(n1,n2)
+        return 1+f
+    return wrapper
+@my_decorator
+def wrapper(n1,n2):
+    return n1+n2
+
+def double_val(func):
+    def wrapper(n1,n2):
+        f = func(n1,n2)
+        return f*2
+    return wrapper
+
+@double_val
+@my_decorator
+def myfunc(n1,n2):
+    return n1*n2
+
+n1 = int(input("Enter first number: "))
+n2 = int(input("Enter second number: "))
+print(wrapper(n1,n2))
+print(myfunc(n1,n2))
+
+#-------------------------------------------------------------------------------------------
