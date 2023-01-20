@@ -258,7 +258,6 @@ print()
 
 def my_decorator(func):
     def wrapper(n1,n2):
-        n=10
         f = func(n1,n2)
         return 1+f
     return wrapper
