@@ -209,3 +209,50 @@ print()
 # logger.exception("This is an exception message")
 
 #-------------------------------------------------------------------------------------------
+
+#Generators
+#created using yield keyword. Maintain the return state of the function in the cache memory.
+
+# def countdown(n):
+#     i=0
+#     while i<=n:
+#         yield i
+#         i+=1
+# y = countdown(20)
+# for i in y:
+#     print(i)
+#     if(i==15):
+#         break
+
+#-------------------------------------------------------------------------------------------
+
+#Iterators
+#Iterators are objects that can be iterated upon. They are implemented using __iter__() and __next__() methods.
+
+# class MyIterator:
+#     def __init__(self,l,h):
+#         self.l=l
+#         self.h=h
+
+#     def __iter__(self):
+#         return self
+
+#     def __next__(self):
+#         if self.l<=self.h:
+#             x = self.l
+#             self.l+=1
+#             return x
+#         else:
+#             raise StopIteration
+
+# if __name__ == '__main__':
+#     obj = MyIterator(1,10)
+#     for i in obj:
+#         print(i)
+
+
+#-------------------------------------------------------------------------------------------
+
+#Decorators
+#Decorators are used to modify the functionality of a function without changing the function itself. They are implemented using @ symbol. Decorators can be used to implement logging, authentication, etc. 
+
