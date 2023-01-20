@@ -24,6 +24,7 @@
 #     print(obj.get_stud_details())
 #     print(obj.get_stud())
 
+#-------------------------------------------------------------------------------------------
 print()
 
 # class Animal:
@@ -54,6 +55,7 @@ print()
 # obj1 = NonWingedMammal('Platypus')
 # print(Dog.mro())     
 
+#-------------------------------------------------------------------------------------------
 print()
 
 #Polymorphism
@@ -84,6 +86,8 @@ print()
 #     i.info()
 #     i.speak()
 #     print()
+
+#-------------------------------------------------------------------------------------------
 
 #Overriding is there, not overloading
 
@@ -128,29 +132,44 @@ print()
 # print(obj2.area())
 # print(obj2.fact())
 
+#-------------------------------------------------------------------------------------------
+
 #ABC stands for Abstract Base Class
-from abc import ABC, abstractmethod
+# from abc import ABC, abstractmethod
 
-class MyClass(ABC):
-    @abstractmethod
-    def calc(self):
-        pass
+# class MyClass(ABC):
+#     @abstractmethod
+#     def calc(self):
+#         pass
 
-class MyClass(ABC):
-    def connect(self):
-        pass
-    def disconnect(self):
-        pass
+# class MyClass(ABC):
+#     def connect(self):
+#         pass
+#     def disconnect(self):
+#         pass
 
-class SubClass(MyClass):
-    def calc(self,x):
-        print(f"{x**2} is the square of {x}")
+# class SubClass(MyClass):
+#     def calc(self,x):
+#         print(f"{x**2} is the square of {x}")
 
-    def connect(self):
-        super().connect()
-        print("Connected to DB")
+#     def connect(self):
+#         super().connect()
+#         print("Connected to DB")
 
-if __name__ == '__main__':
-    obj = SubClass()
-    obj.calc(13)
-    obj.connect()
+# if __name__ == '__main__':
+#     obj = SubClass()
+#     obj.calc(13)
+#     obj.connect()
+
+#--------------------------------------------------------------------------------------------------------------
+
+#Exception Handling
+
+# try:
+#     f = open('test.txt','r')
+#     a,b = [int(x) for x in input("Enter two numbers: ").split()]
+#     print(a/b)
+#     f.write(f"{a} divided by {b} is {a/b}")
+# except ZeroDivisionError as e:
+#     print("Division by zero is not possible")
+
