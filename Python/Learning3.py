@@ -87,43 +87,70 @@ print()
 
 #Overriding is there, not overloading
 
-from math import pi
+# from math import pi
 
-class Shape:
-    def __init__(self,name):
-        self.name=name
+# class Shape:
+#     def __init__(self,name):
+#         self.name=name
 
-    def area(self):
+#     def area(self):
+#         pass
+
+#     def fact(self):
+#         return "2D Shape"
+
+#     def __str__(self):
+#         return self.name
+
+# class Square(Shape):
+#     def __init__(self,length):
+#         super().__init__('Square')
+#         self.length=length
+
+#     def area(self):
+#         return self.length**2
+
+#     def fact(self):
+#         return "Each angle is 90"
+
+# class Circle(Square):
+#     def __init__(self, radius):
+#         super().__init__("Circle")
+#         self.radius=radius
+    
+#     def area(self):
+#         return pi*(self.radius**2)
+
+# obj1 = Square(4)
+# print(obj1.area())
+# print(obj1.fact())
+# obj2 = Circle(4)
+# print(obj2.area())
+# print(obj2.fact())
+
+#ABC stands for Abstract Base Class
+from abc import ABC, abstractmethod
+
+class MyClass(ABC):
+    @abstractmethod
+    def calc(self):
         pass
 
-    def fact(self):
-        return "2D Shape"
+class MyClass(ABC):
+    def connect(self):
+        pass
+    def disconnect(self):
+        pass
 
-    def __str__(self):
-        return self.name
+class SubClass(MyClass):
+    def calc(self,x):
+        print(f"{x**2} is the square of {x}")
 
-class Square(Shape):
-    def __init__(self,length):
-        super().__init__('Square')
-        self.length=length
+    def connect(self):
+        super().connect()
+        print("Connected to DB")
 
-    def area(self):
-        return self.length**2
-
-    def fact(self):
-        return "Each angle is 90"
-
-class Circle(Square):
-    def __init__(self, radius):
-        super().__init__("Circle")
-        self.radius=radius
-    
-    def area(self):
-        return pi*(self.radius**2)
-
-obj1 = Square(4)
-print(obj1.area())
-print(obj1.fact())
-obj2 = Circle(4)
-print(obj2.area())
-print(obj2.fact())
+if __name__ == '__main__':
+    obj = SubClass()
+    obj.calc(13)
+    obj.connect()
