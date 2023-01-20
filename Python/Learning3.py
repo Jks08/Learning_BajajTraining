@@ -173,3 +173,23 @@ print()
 # except ZeroDivisionError as e:
 #     print("Division by zero is not possible")
 
+# except IOError as e:
+#     print("Error: File not found or path is incorrect")
+
+
+def avg(l):
+    t=0
+    for i in l:
+        t+=i
+    avg= t/len(l)
+    return t,avg
+
+if __name__=='__main__':
+    try:
+        t,a=avg([1,2,3,4,5])
+        print(f"Total is {t} and average is {a}")
+    except TypeError as e:
+        print("The list should contain only numbers",e)
+    except ZeroDivisionError as e:
+        print("The list should not be empty",e)
+
