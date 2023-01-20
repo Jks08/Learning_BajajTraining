@@ -218,3 +218,29 @@ print('\n')
 # print(dic)
 # newSheet = pd.DataFrame(dic,index=[0])
 # newSheet.to_excel('newSheet.xlsx')
+
+# def extract_headers_from_csv_url(urlToRead):
+#     try:
+#         webUrl = urlopen(url)
+#         print("Result code: " + str(webUrl.getcode()))
+#         data = webUrl.read()
+#         print(data)
+#         headers = str(data).split("\\n")[0]
+#         print(headers)
+#         header_list = headers.split(",")
+#         print(header_list)
+#     except Exception as e:
+#         print("Exception occured: " + str(e))
+
+# def extract_headers_from_csv_url(urlToRead):
+#     try:
+#         webUrl = urlopen(urlToRead)
+#         print("Result code: " + str(webUrl.getcode()))
+#         data = webUrl.read()
+#         print(data)
+#         headers = str(data).split("\\n")[0]
+#         print(headers)
+#         header_list = headers.split(",")
+#         print(header_list)
+#     except Exception as e:
+#         print("Exception occured: " + str(e))

@@ -177,19 +177,35 @@ print()
 #     print("Error: File not found or path is incorrect")
 
 
-def avg(l):
-    t=0
-    for i in l:
-        t+=i
-    avg= t/len(l)
-    return t,avg
+# def avg(l):
+#     t=0
+#     for i in l:
+#         t+=i
+#     avg= t/len(l)
+#     return t,avg
 
-if __name__=='__main__':
-    try:
-        t,a=avg([1,2,3,4,5])
-        print(f"Total is {t} and average is {a}")
-    except TypeError as e:
-        print("The list should contain only numbers",e)
-    except ZeroDivisionError as e:
-        print("The list should not be empty",e)
+# if __name__=='__main__':
+#     try:
+#         t,a=avg([1,2,3,4,5])
+#         print(f"Total is {t} and average is {a}")
+#     except TypeError as e:
+#         print("The list should contain only numbers",e)
+#     except ZeroDivisionError as e:
+#         print("The list should not be empty",e)
 
+#-------------------------------------------------------------------------------------------
+
+#Logging
+
+# import logging
+
+# logging.basicConfig(filename='test.log',level=logging.DEBUG,format='%(asctime)s:%(levelname)s:%(message)s')
+# logger = logging.getLogger().setLevel(logging.DEBUG)
+# logger.debug("This is a debug message")
+# logger.info("This is an info message")
+# logger.warning("This is a warning message")
+# logger.error("This is an error message")
+# logger.critical("This is a critical message")
+# logger.exception("This is an exception message")
+
+#-------------------------------------------------------------------------------------------
