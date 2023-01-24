@@ -7,10 +7,10 @@
     <title>Javascript - Learning for the very first time!</title>
 </head>
 <body>
-    <h1> Using user input prompt</h1>
+    <h1 style="text-align: center;"> Learning Javascript</h1>
     <p id="demo"> </p>
     <!-- <button onclick="myCalculator()">Click Here</button> -->
-    <button onclick="myCalculator()"> Press me hard oniichan 
+    <button onclick="myCalculator()" style="height:1cm; width:10cm; border: 5cm; background-color: aqua;"> Press me hard oniichan 
         <script src="toBePutIntotestRun1Js.js"> 
         </script>
     </button> 
@@ -39,9 +39,33 @@
         }
     </script> -->
 
-    <p id="demo1"> 
-    <script type="text/javascript" src="functionCalls.js">
-    </script>
+    <p id="demo1">
+        <button onclick="myFunction()" style="height:1cm; width:5cm"> Get results
+        <script type="text/javascript" src="functionCalls.js">   
+        </script></button>
     </p>
+
+    <p>
+        <!-- <input type="button" value="PLAY" onclick="playaudio()">  -->
+        <!-- <audio id="audio" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" controls></audio> --> <!-- Old way to play audio in html page using JS -->
+        <button onclick="playaudio2()" style="height: 1cm; width: 5cm;"> Play audio </button> <!-- New way to play audio in html page using JS -->
+    </p>
+
+    <p id="videoButton" >
+        <button id='videoButton1' onclick="playVideo()" style="height: 1cm; width: 5cm;"> Play video </button>
+        <script type="text/javascript" src="functionCalls.js">
+        </script>
+        <!-- <button id="videoButton" onclick="playVideo()" src="functionCalls.js"> Play video </button> -->
+    </p>
+
+    <hr>
+    <a href="#" class="trigger"></a>
+    <iframe class="video" width=695 height="360" src="https://www.youtube.com/embed/Fve_lHIPa-I" title="Unravel - Tokyo Ghoul" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen align="left"></iframe>
+
+    <iframe id="existing-iframe-example"
+        width=695 height="360"
+        src="https://www.youtube.com/embed/LKP-vZvjbh8"
+        frameborder="0" align="right"></iframe>
+
 </body>
 </html>
