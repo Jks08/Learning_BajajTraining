@@ -41,31 +41,51 @@
 # if __name__ == '__main__':
 #     unittest.main()
 
+# import unittest
+# from calc import Calculator
+
+# class TestCalculator(unittest.TestCase):
+#     def setUp(self):
+#         self.calc = Calculator()
+
+#     def test_add(self):
+#         result = self.calc.add(1, 2)
+#         self.assertEqual(result, 3)
+
+#     def test_subtract(self):
+#         result = self.calc.subtract(4, 2)
+#         self.assertEqual(result, 2)
+
+#     def test_multiply(self):
+#         result = self.calc.multiply(2, 3)
+#         self.assertEqual(result, 6)
+
+#     def test_divide(self):
+#         result = self.calc.divide(4, 2)
+#         self.assertEqual(result, 2)
+
+#     def test_divide_by_zero(self):
+#         self.assertRaises(ValueError, self.calc.divide, 2, 0)
+
+# if __name__ == '__main__':
+#     unittest.main()
+
 import unittest
-from calc import Calculator
-
-class TestCalculator(unittest.TestCase):
-    def setUp(self):
-        self.calc = Calculator()
-
-    def test_add(self):
-        result = self.calc.add(1, 2)
-        self.assertEqual(result, 3)
-
-    def test_subtract(self):
-        result = self.calc.subtract(4, 2)
-        self.assertEqual(result, 2)
-
-    def test_multiply(self):
-        result = self.calc.multiply(2, 3)
-        self.assertEqual(result, 6)
-
-    def test_divide(self):
-        result = self.calc.divide(4, 2)
-        self.assertEqual(result, 2)
-
-    def test_divide_by_zero(self):
-        self.assertRaises(ValueError, self.calc.divide, 2, 0)
-
+class TestStringMethods(unittest.TestCase):
+    def test_upper(self):
+        self.assertEqual('foo'.upper(), 'FOO')
+    def test_isupper(self):
+        self.assertTrue('FOO'.isupper())
+        self.assertFalse('Foo'.isupper())
+    def test_split(self):
+        s = 'hello world'
+        self.assertEqual(s.split(), ['hello', 'world'])
+        # check that s.split fails when the separator is not a string
+        with self.assertRaises(TypeError):
+            s.split(2)
 if __name__ == '__main__':
     unittest.main()
+
+# In terminal, we can run the above test using the following two commands:
+# 1. python3 -m unittest {file_name}.py. This will run all the tests in the file nad return the result.
+# 2. python3 -m unittest -v {file_name}.py. This will run all the tests in the file and return the result with more details on each individual test.
