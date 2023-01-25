@@ -2,7 +2,7 @@
 
 import test
 def monkey_patch_func(self):
-    print("Haha you have been monkey patched")
+    print("Haha you have been monkey patched! Keeee Keee KEee Keee")
 
 test.Test.func = monkey_patch_func
 obj = test.Test()
