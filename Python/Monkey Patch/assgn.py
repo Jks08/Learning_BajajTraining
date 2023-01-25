@@ -93,3 +93,29 @@ if __name__ == '__main__':
         runner = HTMLTestRunner(stream=f, title='Test Report', description='Unit Testing')
         unittest.main(testRunner=runner)
 
+# Now download this html page as a pdf and mail it to the specific mail id.
+
+# import os
+# import smtplib
+# import imghdr
+# from email.message import EmailMessage
+
+# EMAIL_ADDRESS = os.environ.get('EMAIL_USER')
+# EMAIL_PASSWORD = os.environ.get('EMAIL_PASS')
+
+# msg = EmailMessage()
+# msg['Subject'] = 'Test Report'
+# msg['From'] = EMAIL_ADDRESS
+# msg['To'] = 'srivastavajishnu.31@gmail.com'
+# msg.set_content('Test Report')
+
+# with open('testReport.html', 'rb') as f:
+#     file_data = f.read()
+#     file_type = imghdr.what(f.name)
+#     file_name = f.name
+
+# msg.add_attachment(file_data, maintype='application', subtype='octet-stream', filename=file_name)
+
+# with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
+#     smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
+#     smtp.send_message(msg)
