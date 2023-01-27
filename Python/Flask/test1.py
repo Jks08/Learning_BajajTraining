@@ -11,6 +11,10 @@ def index():
     browser_info = request.headers.get('User-Agent')
     return '<h2> Your browser is %s </h2>' % browser_info
 
+@app.route('/info')
+def info():
+    return '<h2> This is the info page </h2>' 
+
 @app.route('/user/<name>')
 def add(name):
     return '<p> Hello %s' % name
