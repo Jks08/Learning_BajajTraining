@@ -1,4 +1,5 @@
 from flask import Flask, request
+import pdb
 
 app = Flask(__name__)
 
@@ -17,7 +18,8 @@ def info():
 
 @app.route('/user/<name>')
 def add(name):
-    return f'<h1> This is the page of {name.upper()}. Our Lord and Saviour! </h1> <hr> <h1> Welcome to the page of {name.upper()} and forever be grateful for its existence!</h1>'  
+    # pdb.set_trace()
+    return f'<h1> This is the page of {name.upper()[-1]}. Our Lord and Saviour! </h1> <hr> <h1> Welcome to the page of {name.upper()} and forever be grateful for its existence!</h1>'  
 
 if __name__=='__main__':
     app.run(debug=True)   
