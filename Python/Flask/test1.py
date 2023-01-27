@@ -1,6 +1,8 @@
-from flask import Flask, request
+from flask import Flask, request, render_template, url_for
 import pdb
 from translate import Translator
+import string
+import random
 
 app = Flask(__name__)
 
@@ -31,7 +33,40 @@ def userLatin(name):
 
     return f"<h1> Hello {name}! Your latin name is {username} </h1>"
 
+@app.route('/url_shortener', methods=['GET', 'POST'])
+def url_shortener():
+    l1 = []
+    l2 = []
+    if request.method == 'POST':
+        req = request.form['url']
+        url = "https://"+func_to_shorten_url(req)+".com"
+        return f'<a href="{req}"> {url} </a>'
+    #     l1.append(req)
+    #     l2.append(url)
+    #     d = dict(zip(l1, l2))
+    #     print(d)
 
+    # for i,j in d.items():
+    #     if i == req:
+    #         return f'<a href="{req}"> {d[i]} </a>'
+    #     else:
+    #         return f'<a href="{req}"> {url} </a>'
+
+
+    return '''<form method="POST">
+                URL: <input type="text" name="url">
+                <input type="submit" value="Submit">
+            </form>'''
+
+
+def func_to_shorten_url(url):
+    s = list(string.ascii_letters)
+    s1 = list(string.digits)
+    random.shuffle(s)
+    random.shuffle(s1)
+    s3 = s + s1
+    short_url = ''.join(s[1])+ ''.join(s3[1:5])
+    return short_url
 
 if __name__=='__main__':
     app.run(debug=True)   
