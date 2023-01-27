@@ -14,7 +14,7 @@ def index():
 
 @app.route('/info')
 def info():
-    return '<h2> This is the info page </h2>' 
+    return ('<h2> This is the info page </h2>')
 
 @app.route('/user/<name>')
 def add(name):
