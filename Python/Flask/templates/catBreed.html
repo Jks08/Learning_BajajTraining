@@ -10,5 +10,5 @@
     {# This is hidden tag for CSRF protection #}
     {{ form.hidden_tag() }}
     {{ form.cat_breed.label }} {{ form.cat_breed }} 
-    {{ form.submit() }} <!-- Beacuse of CSRF protection the submit method is not allowed-->
+    {{ form.submit() }} <!-- CSRF Prottection creates an ecrypted token from the secretkey and then that gets validated-->
 </form>
