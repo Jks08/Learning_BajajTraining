@@ -1,0 +1,23 @@
+<p>
+    {% if breed %}
+    The cat breed is {{ breed }}.
+    {% else %}
+    The cat breed is not specified.
+    {% endif %}
+</p>
+
+<form method="POST">
+    {# This is hidden tag for CSRF protection #}
+    {{ form.hidden_tag() }}
+    {{ form.breed.label }} {{ form.breed }} 
+    <br> <hr>
+    {{ form.neutered.label }} {{ form.neutered }}
+    <br> <hr>
+    {{ form.mood.label }} {{ form.mood }}
+    <br> <hr>
+    {{ form.food_choice.label }} {{ form.food_choice }}
+    <br> <hr>
+    {{ form.feedback.label }} {{ form.feedback }}
+    <br>
+    {{ form.submit() }}
+</form>
