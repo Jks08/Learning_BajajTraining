@@ -1,0 +1,11 @@
+<div>
+    {% for m in get_flashed_messages() %}
+    {{ m }}
+    {% endfor %}
+</div>
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{form.breed.label}} {{form.breed}}
+    {{form.submit()}}
+</form>
