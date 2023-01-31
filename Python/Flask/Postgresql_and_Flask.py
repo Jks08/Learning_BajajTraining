@@ -12,7 +12,16 @@ cur = con.cursor()
 # cur.execute("update test set data='chem' where data='abcdef';")
 # con.commit()
 
-cur.execute("select * from test;")
+# cur.execute("create table test2 (id serial primary key, param1 integer, param2 varchar);")
+# cur.execute("insert into test2 (param1, param2) values (%s, %s)", (1, "jks"))
+# cur.execute("insert into test2 (param1, param2) values (%s, %s)", (2, "ab"))
+# cur.execute("insert into test2 (param1, param2) values (%s, %s)", (3, "sa"))
+# cur.execute("insert into test2 (param1, param2) values (%s, %s)", (4, "pky"))
+# cur.execute("insert into test2 (param1, param2) values (%s, %s)", (5, "ps"))
+# con.commit()
+
+# cur.execute("select * from test;")
+cur.execute("select * from test2;")
 print(cur.fetchall())
 con.commit()
 
