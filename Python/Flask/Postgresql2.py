@@ -16,7 +16,7 @@ class DB_Connection:
 
     @classmethod
     def connect_bds(cls):
-        cls.con = psycopg2.connect("dbname = Tutorial1 user=postgres password=Finserv@2023")
+        cls.con = psycopg2.connect("dbname = Jks_try1 user=postgres password=Finserv@2023")
         cls.cur = cls.con.cursor()
 
     @classmethod
@@ -51,19 +51,54 @@ class DB_Connection:
         cls.con.close()
         cls.cur.close()
 
-# Now we take user inputs and call the functions. 
+# Now we run a loop to get the user input and perform the operations on the database accordingly using the above class methods. 
 
 if __name__ == '__main__':
-    DB_Connection.connect_bds()
-    # DB_Connection.create_table('student','sid','sname','saddr')
-    # DB_Connection.insert_data('student',1,'jks','chem')
-    # DB_Connection.insert_data('student',2,'ab','chem')
-    # DB_Connection.insert_data('student',3,'sa','chem')
-    # DB_Connection.insert_data('student',4,'pky','chem')
-    # DB_Connection.insert_data('student',5,'ps','chem')
-    # DB_Connection.select_values('student')
-    # DB_Connection.update_values('student','sname','jks','jks1')
-    # DB_Connection.select_values('student')
-    # DB_Connection.delete_values('student','sid',1)
-    # DB_Connection.select_values('student')
-    DB_Connection.close_connection()
+    while True:
+        print(" 1. Create Table ")
+        print(" 2. Insert Data ")
+        print(" 3. Select Data ")
+        print(" 4. Update Data ")
+        print(" 5. Delete Data ")
+        print(" 6. Exit ")
+        choice = int(input("Enter your choice: "))
+        if choice == 1:
+            table_name = input("Enter table name: ")
+            v1 = input("Enter column 1 name: ")
+            v2 = input("Enter column 2 name: ")
+            v3 = input("Enter column 3 name: ")
+            DB_Connection.connect_bds()
+            DB_Connection.create_table(table_name,v1,v2,v3)
+            DB_Connection.close_connection()
+        elif choice == 2:
+            table_name = input("Enter table name: ")
+            v1 = int(input("Enter value 1: "))
+            v2 = input("Enter value 2: ")
+            v3 = input("Enter value 3: ")
+            DB_Connection.connect_bds()
+            DB_Connection.insert_data(table_name,v1,v2,v3)
+            DB_Connection.close_connection()
+        elif choice == 3:
+            table_name = input("Enter table name: ")
+            DB_Connection.connect_bds()
+            DB_Connection.select_values(table_name)
+            DB_Connection.close_connection()
+        elif choice == 4:
+            table_name = input("Enter table name: ")
+            v1 = input("Enter column 1 name: ")
+            v2 = input("Enter column 2 name: ")
+            v3 = input("Enter column 3 name: ")
+            DB_Connection.connect_bds()
+            DB_Connection.update_values(table_name,v1,v2,v3)
+            DB_Connection.close_connection()
+        elif choice == 5:
+            table_name = input("Enter table name: ")
+            v1 = input("Enter column 1 name: ")
+            v2 = input("Enter column 2 name: ")
+            DB_Connection.connect_bds()
+            DB_Connection.delete_values(table_name,v1,v2)
+            DB_Connection.close_connection()
+        elif choice == 6:
+            break
+        else:
+            print("Invalid Choice")

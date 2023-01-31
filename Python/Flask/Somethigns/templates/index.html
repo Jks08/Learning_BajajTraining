@@ -1,0 +1,18 @@
+<body style="background-color: beige;">
+    <h1 style="font-size: xx-large; color: black;"> Please fill the following form: </h1>
+    <form method="POST" style="height: fit-content; width: fit-content; color: red;">
+        {# This is hidden tag for CSRF protection #}
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name }} 
+        <br> <hr>
+        {{ form.age.label }} {{ form.age }}
+        <br> <hr>
+        {{ form.type.label }} {{ form.type }}
+        <br> <hr>
+        {{ form.ownerName.label }} {{ form.ownerName }}
+        <br> <hr>
+        {{ form.ownerAddress.label }} {{ form.ownerAddress }}
+        <br> <hr>
+        {{ form.submit() }}
+    </form>
+    </body>

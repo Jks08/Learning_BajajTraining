@@ -1,0 +1,25 @@
+<h1> Your entered Data: </h1>
+<ul>
+    <li> Name: {{ session['name'] }} </li>
+    <li> Age: {{ session['age'] }} </li>
+    <li> Type: {{ session['type'] }} </li>
+    
+</ul> 
+
+<table>
+    <h1> All Registered Pets: </h1>
+    {% for i in data %}
+    <ul>
+        <tr>
+            <!-- <li>  {{ i[0] }} </li> -->
+            <td> {{ i[0] }} </td>
+            <td> {{ i[1] }} </td>
+            <td> {{ i[2] }} </td>
+            <td> {{ i[3] }} </td>
+            <td> {{ i[4] }} </td>
+            <td> <a href="{{ url_for('update',name=i[0]) }}"> Modify </a> <a href="{{ url_for('delete',name=i[0]) }}">Delete</a></td>
+        </tr> 
+    </ul>
+
+    {% endfor %}
+</table>

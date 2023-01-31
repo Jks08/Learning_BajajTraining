@@ -1,0 +1,13 @@
+<form method="POST">
+    {# This is hidden tag for CSRF protection #}
+    {{ form.hidden_tag() }}
+    {{ form.age.label }} {{ form.age }}
+    <br> <hr>
+    {{ form.type.label }} {{ form.type }}
+    <br> <hr>
+    {{ form.ownerName.label }} {{ form.ownerName }}
+    <br> <hr>
+    {{ form.ownerAddress.label }} {{ form.ownerAddress }}
+    <br> <hr>
+    {{ form.submit() }}
+</form>
