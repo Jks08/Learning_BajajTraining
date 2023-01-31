@@ -1,0 +1,67 @@
+<body style="background-color: beige;">
+<h1> Latest Entered Data: </h1>
+<style>
+    li{
+        font-size: 20px;
+        border: 1px solid black;
+        width: fit-content;
+    }
+</style>
+<ul>
+    <!-- This list will display the data which has been entered latest in the database. -->
+    <li> Name: {{ data[-1][0] }}</li>
+    <li> Age: {{ data[-1][1] }} </li>
+    <li> Type: {{ data[-1][2] }} </li>
+    <li> Owner Name: {{ data[-1][3] }} </li>
+    <li> Owner Address: {{ data[-1][4] }} </li>
+
+</ul> 
+<style>
+    td{
+        font-size: 1cm;
+        border: 3px solid black;
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
+    th{
+        font-size: 1cm;
+        border: 3px solid black;
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
+</style>
+<table style="border: 3px solid coral">
+    <h1> All Registered Pets: </h1>
+    <tr>
+        <th> Name </th>
+        <th> Age </th>
+        <th> Type </th>
+        <th> Owner Name</th>
+        <th> Owner Address </th>
+        <th> Modify </th>
+        <th> Delete </th>
+    </tr>
+    {% for i in data %}
+    <ul>
+        <tr>
+            <!-- <li>  {{ i[0] }} </li> -->
+            <td> {{ i[0] }} </td>
+            <td> {{ i[1] }} </td>
+            <td> {{ i[2] }} </td>
+            <td> {{ i[3] }} </td>
+            <td> {{ i[4] }} </td>
+            <td> <a href="{{ url_for('update',name=i[0]) }}"> Modify </a> </td>
+            <td> <a href="{{ url_for('delete',name=i[0]) }}">Delete</a> </td>
+        </tr> 
+    </ul>
+    {% endfor %}
+
+</table>
+<br>
+<br>
+
+<h1 style="font-size: 1cm; border: 3px solid black; background-color: greenyellow; width: fit-content;"> <a href="{{url_for('index')}}"> Go Home </a></h1>
+
+</body>
