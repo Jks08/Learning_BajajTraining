@@ -293,3 +293,20 @@ NoneType: None
 2023-02-01 14:26:10,981:INFO:logger:Connection closed
 2023-02-01 14:28:36,422:INFO:logger:App ended
 2023-02-01 14:28:36,441:INFO:logger:App ended
+2023-02-01 19:37:12,271:INFO:logger:Logger file created
+2023-02-01 19:37:12,271:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 19:37:12,309:INFO:logger:Registration Form Created
+2023-02-01 19:37:12,309:INFO:logger:Update Form Created
+2023-02-01 19:37:12,316:INFO:logger:App started
+2023-02-01 19:37:12,465:INFO:logger:Logger file created
+2023-02-01 19:37:12,465:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 19:37:12,466:INFO:logger:Registration Form Created
+2023-02-01 19:37:12,466:INFO:logger:Update Form Created
+2023-02-01 19:37:12,467:INFO:logger:App started
+2023-02-01 19:37:26,586:INFO:logger:Connected to the database
+2023-02-01 19:37:26,599:INFO:logger:Data displayed
+2023-02-01 19:37:26,599:INFO:logger:Connection closed
+2023-02-01 19:39:47,644:INFO:logger:App ended
+2023-02-01 19:39:47,679:INFO:logger:App ended
