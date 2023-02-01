@@ -3,9 +3,10 @@ from wtforms import StringField, SubmitField, BooleanField, DateTimeField, Radio
 from wtforms.validators import DataRequired
 from petConn import *
 from petForm import PetAnimalRegistration, PetAnimalUpdate
+from config import Config
 
 app = Flask(__name__)
-app.config['SECRET_KEY']='01hashSecretKey10'
+app.config['SECRET_KEY']=Config().secret()
 
 @app.route('/')
 def index():
