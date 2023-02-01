@@ -5,7 +5,8 @@ import os
 from datetime import datetime
 
 # Create a log file in the same folder as the app.py file
-log_file = os.path.join(os.path.dirname(__file__), "log_file.log")
+# log_file = os.path.join(os.path.dirname(__file__), "log_file.log")
+log_file = "/Users/jishnusrivastava/Documents/PostgresqlLearnings/PostgresqlLearninigs_BajajTraining/Python/PetApp/templates/log_file.log"
 
 # Create a logger object
 logger = logging.getLogger(__name__)
@@ -27,4 +28,16 @@ logger.addHandler(file_handler)
 
 # Log a message to the log file
 logger.info("Logger file created")
+
+# Converrt the log file to a text file in order to view it in the browser.
+
+def log_info():
+    f = open(log_file, "r")
+    log = f.read()
+    log = log.split("\n")
+    s=[]
+    for i in log:
+        s.append(i)
+    return s
+
 

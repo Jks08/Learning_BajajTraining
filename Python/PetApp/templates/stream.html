@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs</title>
+</head>
+<body>
+    <h1> Displaying Logs </h1>
+    <hr>
+    <br>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+        h1 {
+            text-align: center;
+            font-size: 0.5cm;
+            font-family: sans-serif;
+            padding-top: 20px;
+        }
+        p {
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+        span {
+            color: red;
+        }
+        hr {
+            width: 100%;
+        }
+        input {
+            width: 15cm;
+            font-size: 1cm;
+            font-family: sans-serif;
+            color: aquamarine;
+            background-color: black;
+        }
+        p {
+            text-align: center;
+            font-size: medium;
+            font-family: 'Times New Roman';
+            color: blue;
+            padding: 3.5cm;
+            font-size: 1cm;
+        }
+        a {
+            color: blue;
+        }
+    </style> 
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+        <center>
+        <table style="padding: 15px; border: 5px solid coral;">
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th> Level </th>
+                <th> Type </th>
+                <th>Message</th>
+            </tr>
+            {% for log in data %}
+            <tr>
+                <td>{{ log[:10] }}</td>
+                <td>{{ log[11:19] }}</td>
+                <td> {{ log[20:23] }}</td>
+                <td> {{ log[24:28]}}</td>
+                <td>{{ log[29:] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        </center>
+</body>
+</html>
