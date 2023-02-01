@@ -291,3 +291,5 @@ NoneType: None
 2023-02-01 14:26:10,979:INFO:logger:Connected to the database
 2023-02-01 14:26:10,981:INFO:logger:Data displayed
 2023-02-01 14:26:10,981:INFO:logger:Connection closed
+2023-02-01 14:28:36,422:INFO:logger:App ended
+2023-02-01 14:28:36,441:INFO:logger:App ended
