@@ -48,15 +48,6 @@ def index1():
         return redirect(url_for('view'))
     return render_template('index.html',form=form)
 
-# @app.route('/stream',methods=['GET','POST'])
-# def stream():
-#     def generate():
-#         with open('log_file.log') as f:
-#             while True:
-#                 yield f.read()
-#                 sleep(1)
-#     logger.info("Log being viewed")
-#     return app.response_class(generate(), mimetype='')
 
 @app.route('/stream',methods=['GET','POST'])
 def stream():
