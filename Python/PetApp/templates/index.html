@@ -1,6 +1,15 @@
-<body style="background-color: beige;">
+<body style="background-color: burlywood;">
     <h1 style="font-size: xx-large; color: black;"> Please fill the following form: </h1>
-    <form method="POST" style="height: fit-content; width: fit-content; color: red; font-size: 0.5cm;">
+    <style>
+        form{
+            font-size: 0.75cm;
+            color: red;
+            border: 3px dashed aqua;
+            background-color: black;
+            width: 10cm;
+        }
+    </style>
+    <form method="POST">
         {# This is hidden tag for CSRF protection #}
         {{ form.hidden_tag() }}
         {{ form.name.label }} {{ form.name }} 
