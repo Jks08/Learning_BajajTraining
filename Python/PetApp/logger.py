@@ -29,7 +29,7 @@ logger.addHandler(file_handler)
 # Log a message to the log file
 logger.info("Logger file created")
 
-# Converrt the log file to a text file in order to view it in the browser.
+logger.exception("Exception occurred")
 
 def log_info():
     f = open(log_file, "r")

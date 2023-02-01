@@ -150,3 +150,144 @@
 2023-02-01 14:09:32,224:INFO:logger:Registration Form Created
 2023-02-01 14:09:32,224:INFO:logger:Update Form Created
 2023-02-01 14:09:32,231:INFO:logger:App started
+2023-02-01 14:17:45,938:INFO:logger:Logger file created
+2023-02-01 14:17:45,941:INFO:logger:Registration Form Created
+2023-02-01 14:17:45,941:INFO:logger:Update Form Created
+2023-02-01 14:17:45,943:INFO:logger:App started
+2023-02-01 14:17:50,619:INFO:logger:Logger file created
+2023-02-01 14:17:50,624:INFO:logger:Registration Form Created
+2023-02-01 14:17:50,624:INFO:logger:Update Form Created
+2023-02-01 14:17:50,625:INFO:logger:App started
+2023-02-01 14:17:54,235:INFO:logger:Logger file created
+2023-02-01 14:17:54,238:INFO:logger:Registration Form Created
+2023-02-01 14:17:54,238:INFO:logger:Update Form Created
+2023-02-01 14:17:54,239:INFO:logger:App started
+2023-02-01 14:17:55,614:INFO:logger:Logger file created
+2023-02-01 14:17:55,614:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:17:55,616:INFO:logger:Registration Form Created
+2023-02-01 14:17:55,616:INFO:logger:Update Form Created
+2023-02-01 14:17:55,618:INFO:logger:App started
+2023-02-01 14:18:05,848:INFO:logger:Logger file created
+2023-02-01 14:18:05,848:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:18:05,851:INFO:logger:Registration Form Created
+2023-02-01 14:18:05,851:INFO:logger:Update Form Created
+2023-02-01 14:18:05,853:INFO:logger:App started
+2023-02-01 14:18:10,513:INFO:logger:Logger file created
+2023-02-01 14:19:20,397:INFO:logger:Logger file created
+2023-02-01 14:19:20,397:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:19:20,403:INFO:logger:Registration Form Created
+2023-02-01 14:19:20,403:INFO:logger:Update Form Created
+2023-02-01 14:19:20,405:INFO:logger:App started
+2023-02-01 14:19:20,501:INFO:logger:Logger file created
+2023-02-01 14:19:20,501:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:19:20,502:INFO:logger:Registration Form Created
+2023-02-01 14:19:20,502:INFO:logger:Update Form Created
+2023-02-01 14:19:20,504:INFO:logger:App started
+2023-02-01 14:19:34,133:INFO:logger:Connected to the database
+2023-02-01 14:19:34,134:INFO:logger:Data displayed
+2023-02-01 14:19:34,134:INFO:logger:Connection closed
+2023-02-01 14:19:42,823:INFO:logger:Connected to the database
+2023-02-01 14:19:42,835:INFO:logger:Data deleted
+2023-02-01 14:19:42,835:INFO:logger:Connection closed
+2023-02-01 14:19:42,871:INFO:logger:Connected to the database
+2023-02-01 14:19:42,872:INFO:logger:Data displayed
+2023-02-01 14:19:42,872:INFO:logger:Connection closed
+2023-02-01 14:19:43,184:INFO:logger:Connected to the database
+2023-02-01 14:19:43,188:INFO:logger:Data deleted
+2023-02-01 14:19:43,188:INFO:logger:Connection closed
+2023-02-01 14:19:43,223:INFO:logger:Connected to the database
+2023-02-01 14:19:43,224:INFO:logger:Data displayed
+2023-02-01 14:19:43,224:INFO:logger:Connection closed
+2023-02-01 14:19:44,179:INFO:logger:Connected to the database
+2023-02-01 14:19:44,182:INFO:logger:Data deleted
+2023-02-01 14:19:44,182:INFO:logger:Connection closed
+2023-02-01 14:19:44,206:INFO:logger:Connected to the database
+2023-02-01 14:19:44,206:INFO:logger:Data displayed
+2023-02-01 14:19:44,206:INFO:logger:Connection closed
+2023-02-01 14:19:52,655:INFO:logger:App ended
+2023-02-01 14:19:52,694:INFO:logger:App ended
+2023-02-01 14:20:37,393:INFO:logger:Logger file created
+2023-02-01 14:20:37,393:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:20:37,400:INFO:logger:Registration Form Created
+2023-02-01 14:20:37,400:INFO:logger:Update Form Created
+2023-02-01 14:20:37,401:INFO:logger:App started
+2023-02-01 14:20:37,493:INFO:logger:Logger file created
+2023-02-01 14:20:37,494:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:20:37,495:INFO:logger:Registration Form Created
+2023-02-01 14:20:37,495:INFO:logger:Update Form Created
+2023-02-01 14:20:37,496:INFO:logger:App started
+2023-02-01 14:20:41,703:INFO:logger:Connected to the database
+2023-02-01 14:20:41,704:INFO:logger:Data displayed
+2023-02-01 14:20:41,704:INFO:logger:Connection closed
+2023-02-01 14:20:52,347:INFO:logger:Logger file created
+2023-02-01 14:20:52,347:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:20:52,351:INFO:logger:Registration Form Created
+2023-02-01 14:20:52,351:INFO:logger:Update Form Created
+2023-02-01 14:20:52,353:INFO:logger:App started
+2023-02-01 14:20:54,837:INFO:logger:Logger file created
+2023-02-01 14:20:54,838:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:20:54,840:INFO:logger:Registration Form Created
+2023-02-01 14:20:54,840:INFO:logger:Update Form Created
+2023-02-01 14:20:54,842:INFO:logger:App started
+2023-02-01 14:20:59,535:INFO:logger:Logger file created
+2023-02-01 14:20:59,535:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:20:59,537:INFO:logger:Registration Form Created
+2023-02-01 14:20:59,537:INFO:logger:Update Form Created
+2023-02-01 14:20:59,539:INFO:logger:App started
+2023-02-01 14:21:00,932:INFO:logger:Logger file created
+2023-02-01 14:21:00,932:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:21:00,934:INFO:logger:Registration Form Created
+2023-02-01 14:21:00,934:INFO:logger:Update Form Created
+2023-02-01 14:21:00,935:INFO:logger:App started
+2023-02-01 14:21:15,643:INFO:logger:Logger file created
+2023-02-01 14:21:15,644:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:21:15,646:INFO:logger:Registration Form Created
+2023-02-01 14:21:15,647:INFO:logger:Update Form Created
+2023-02-01 14:21:15,648:INFO:logger:App started
+2023-02-01 14:21:27,110:INFO:logger:Logger file created
+2023-02-01 14:21:27,110:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:21:27,114:INFO:logger:Registration Form Created
+2023-02-01 14:21:27,114:INFO:logger:Update Form Created
+2023-02-01 14:21:27,115:INFO:logger:App started
+2023-02-01 14:21:32,132:INFO:logger:Connected to the database
+2023-02-01 14:21:32,134:INFO:logger:Data displayed
+2023-02-01 14:21:32,134:INFO:logger:Connection closed
+2023-02-01 14:23:58,056:INFO:logger:Logger file created
+2023-02-01 14:23:58,056:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:23:58,093:INFO:logger:Registration Form Created
+2023-02-01 14:23:58,093:INFO:logger:Update Form Created
+2023-02-01 14:23:58,095:INFO:logger:App started
+2023-02-01 14:23:58,241:INFO:logger:Logger file created
+2023-02-01 14:23:58,241:ERROR:logger:Exception occurred
+NoneType: None
+2023-02-01 14:23:58,243:INFO:logger:Registration Form Created
+2023-02-01 14:23:58,243:INFO:logger:Update Form Created
+2023-02-01 14:23:58,244:INFO:logger:App started
+2023-02-01 14:24:00,008:INFO:logger:Connected to the database
+2023-02-01 14:24:00,009:INFO:logger:Data displayed
+2023-02-01 14:24:00,009:INFO:logger:Connection closed
+2023-02-01 14:25:21,870:INFO:logger:Connected to the database
+2023-02-01 14:25:21,873:INFO:logger:Data displayed
+2023-02-01 14:25:21,873:INFO:logger:Connection closed
+2023-02-01 14:25:33,664:INFO:logger:Connected to the database
+2023-02-01 14:25:33,673:INFO:logger:Data inserted
+2023-02-01 14:25:33,673:INFO:logger:Connection closed
+2023-02-01 14:25:33,709:INFO:logger:Connected to the database
+2023-02-01 14:25:33,710:INFO:logger:Data displayed
+2023-02-01 14:25:33,710:INFO:logger:Connection closed
+2023-02-01 14:26:10,979:INFO:logger:Connected to the database
+2023-02-01 14:26:10,981:INFO:logger:Data displayed
+2023-02-01 14:26:10,981:INFO:logger:Connection closed
