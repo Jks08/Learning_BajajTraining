@@ -4,6 +4,7 @@ from wtforms.validators import DataRequired
 from petConn import *
 from petForm import PetAnimalRegistration, PetAnimalUpdate
 from config import Config
+from logger import logger
 
 app = Flask(__name__)
 app.config['SECRET_KEY']=Config().secret()
@@ -48,4 +49,7 @@ def index1():
     
 
 if __name__ == '__main__':
+    logger.info("App started")
     app.run(debug=True)
+    # Get logger info from the app.py file and store them in a log file
+    logger.info("App ended")

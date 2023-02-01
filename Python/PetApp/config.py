@@ -1,5 +1,7 @@
 #Configuartion file for PetApp. In the config fil, just put key value pairs such as : table_name = 'pets_regs1' and then in the app.py file, import config and use config.table_name to get the value of the key table_name. This is a good way to keep your code clean and easy to read.
 
+#Also make logger file and put it in the same folder as the app.py file. Then import logger and use logger.info("message") to log messages to the log file.
+
 class Config:
     def __init__(self):
         self.table_name = "pets_regs1"

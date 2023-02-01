@@ -1,0 +1,50 @@
+2023-02-01 10:43:32,669:INFO:__main__:Logger file created
+2023-02-01 10:45:11,050:INFO:logger:Logger file created
+2023-02-01 10:45:11,054:INFO:logger:App started
+2023-02-01 10:45:11,200:INFO:logger:Logger file created
+2023-02-01 10:45:11,201:INFO:logger:App started
+2023-02-01 10:45:22,844:INFO:logger:App ended
+2023-02-01 10:45:22,921:INFO:logger:App ended
+2023-02-01 10:52:55,538:INFO:logger:Logger file created
+2023-02-01 10:52:55,541:INFO:logger:App started
+2023-02-01 10:52:55,633:INFO:logger:Logger file created
+2023-02-01 10:52:55,635:INFO:logger:App started
+2023-02-01 10:52:58,347:INFO:logger:Connected to the database
+2023-02-01 10:52:58,349:INFO:logger:Data displayed
+2023-02-01 10:52:58,349:INFO:logger:Connection closed
+2023-02-01 10:53:04,041:INFO:logger:Connected to the database
+2023-02-01 10:53:04,043:INFO:logger:Data displayed
+2023-02-01 10:53:04,043:INFO:logger:Connection closed
+2023-02-01 10:53:09,949:INFO:logger:Connected to the database
+2023-02-01 10:53:09,959:INFO:logger:Data deleted
+2023-02-01 10:53:09,959:INFO:logger:Connection closed
+2023-02-01 10:53:09,978:INFO:logger:Connected to the database
+2023-02-01 10:53:09,979:INFO:logger:Data displayed
+2023-02-01 10:53:09,979:INFO:logger:Connection closed
+2023-02-01 10:53:13,088:INFO:logger:Connected to the database
+2023-02-01 10:53:13,090:INFO:logger:Data displayed
+2023-02-01 10:53:13,091:INFO:logger:Connection closed
+2023-02-01 10:53:39,045:INFO:logger:Connected to the database
+2023-02-01 10:53:39,049:INFO:logger:Data updated
+2023-02-01 10:53:39,049:INFO:logger:Connection closed
+2023-02-01 10:53:39,064:INFO:logger:Connected to the database
+2023-02-01 10:53:39,066:INFO:logger:Data displayed
+2023-02-01 10:53:39,066:INFO:logger:Connection closed
+2023-02-01 10:53:46,539:INFO:logger:App ended
+2023-02-01 10:53:46,616:INFO:logger:App ended
+2023-02-01 10:55:28,912:INFO:logger:Logger file created
+2023-02-01 10:55:28,921:INFO:logger:Registration Form Created
+2023-02-01 10:55:28,921:INFO:logger:Update Form Created
+2023-02-01 10:55:28,922:INFO:logger:App started
+2023-02-01 10:55:29,012:INFO:logger:Logger file created
+2023-02-01 10:55:29,014:INFO:logger:Registration Form Created
+2023-02-01 10:55:29,014:INFO:logger:Update Form Created
+2023-02-01 10:55:29,015:INFO:logger:App started
+2023-02-01 10:55:34,930:INFO:logger:Connected to the database
+2023-02-01 10:55:34,933:INFO:logger:Data displayed
+2023-02-01 10:55:34,933:INFO:logger:Connection closed
+2023-02-01 10:55:41,314:INFO:logger:Connected to the database
+2023-02-01 10:55:41,316:INFO:logger:Data displayed
+2023-02-01 10:55:41,316:INFO:logger:Connection closed
+2023-02-01 10:55:47,617:INFO:logger:App ended
+2023-02-01 10:55:47,692:INFO:logger:App ended
