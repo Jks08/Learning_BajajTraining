@@ -6,6 +6,10 @@ api = Api(app)
 
 cats = []
 
+class HomePage(Resource):
+    def get(self):
+        return 'Homepage'
+
 class CatNames(Resource):
     def get(self,name):
         print(cats)
@@ -31,6 +35,7 @@ class AllNames(Resource):
     def get(self):
         return {'cats':cats}
 
+api.add_resource(HomePage, '/')
 api.add_resource(CatNames, '/cat/<string:name>')
 api.add_resource(AllNames, '/cats')
 
