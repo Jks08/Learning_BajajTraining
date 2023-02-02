@@ -21,7 +21,8 @@ class CatNames(Resource):
             if cat.get('name') == name:
                 return cat
         return {name:'not found'},404
-
+    
+    @jwt_required()
     def post(self,name):
         cat = {'name':name}
         cats.append(cat)
@@ -36,6 +37,7 @@ class CatNames(Resource):
         return {name:'not found, so cannot delete'}
 
 class AllNames(Resource):
+    @jwt_required()
     def get(self):
         return {'cats':cats}
 
