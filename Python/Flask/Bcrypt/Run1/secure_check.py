@@ -7,6 +7,8 @@ db.create_all()
 users = [User(1, 'bob', 'pass'), User(2,'Abhay','pass')]
 user_table = {u.username: u for u in users}
 userid_table = {u.id: u for u in users}
+db.session.add_all(users)
+db.session.commit()
 
 def authenticate(username, password):
     user = user_table.get(username, None)
