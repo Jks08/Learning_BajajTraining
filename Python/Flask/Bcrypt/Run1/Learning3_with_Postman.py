@@ -1,8 +1,12 @@
 from flask_restful import Resource, Api
 from flask import Flask
+from secure_check import authenticate, identity
+from flask_jwt import JWT, jwt_required
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'super-secret'
 api = Api(app)
+jwt = JWT(app, authenticate, identity)
 
 cats = []
 
