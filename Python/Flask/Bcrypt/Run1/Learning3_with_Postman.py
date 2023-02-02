@@ -41,4 +41,3 @@ api.add_resource(AllNames, '/cats')
 
 if __name__ == '__main__':
     app.run(debug=True)
-
