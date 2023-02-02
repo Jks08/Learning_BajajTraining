@@ -1,6 +1,8 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
-from user import User
+from user import *
+
+db.create_all()
 
 users = [User(1, 'bob', 'pass'), User(2,'Abhay','pass')]
 user_table = {u.username: u for u in users}

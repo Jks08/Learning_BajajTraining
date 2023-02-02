@@ -46,4 +46,4 @@ api.add_resource(CatNames, '/cat/<string:name>')
 api.add_resource(AllNames, '/cats')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) # If we put host = 0.0.0.0 then we can access this from other machines on the network.
