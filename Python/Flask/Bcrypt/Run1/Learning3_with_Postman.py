@@ -12,7 +12,7 @@ class CatNames(Resource):
         for cat in cats:
             if cat.get('name') == name:
                 return cat
-        return {name:'not found'}
+        return {name:'not found'},404
 
     def post(self,name):
         cat = {'name':name}
